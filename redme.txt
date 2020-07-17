@@ -1,0 +1,18 @@
+#license生成操作说明
+1.生成试用版license,只校验license过期事件
+  注释param.properties文件中ipAddress,macAddress,cpuSerial,mainBoardSerial
+  修改issuedTime，expiryTime(时间间隔设置一年内)
+  
+  #证书生效时间
+  issuedTime=2020-03-30 00:00:01
+  #证书失效时间
+  expiryTime=2021-03-30 00:00:01
+  
+2.生成客户端试用license,校验license过期事件，mac地址，CPU序列号，主板号
+  修改param.properties文件,放开macAddress,cpuSerial,mainBoardSerial
+  修改issuedTime，expiryTime(时间间隔设置100年)
+  
+  #证书生效时间
+  issuedTime=2020-03-30 00:00:01
+  #证书失效时间
+  expiryTime=2120-03-30 00:00:01
